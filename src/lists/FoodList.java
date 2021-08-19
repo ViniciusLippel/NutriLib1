@@ -99,7 +99,8 @@ public class FoodList {
 	public NutriValue nutriValue(double servingSize) {
 		NutriValue total = new NutriValue();
 		for(int i=0; i<this.foodList.size(); i++) {
-			total.sum(this.foodList.get(i).getObject().getNutriValue());
+			if(this.foodList.get(i).getObject().getNutriValue() != null)
+				total.sum(this.foodList.get(i).getObject().getNutriValue());
 		}
 		NutriValue totalByServSize = total.proportional();
 		totalByServSize.multiply(servingSize);

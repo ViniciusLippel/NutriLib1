@@ -16,6 +16,15 @@ public class Ingredient {
 	
 	
 	/**
+	 * Construtor 
+	 * 
+	 * @param name Nome do ingrediente
+	 */
+	public Ingredient(String name) {
+		this.name = name;
+	}
+	
+	/**
 	 * Construtor
 	 * 
 	 * @param name Nome do ingrediente

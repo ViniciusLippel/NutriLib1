@@ -1,7 +1,6 @@
 package lists;
 
 import java.util.ArrayList;
-
 import main.Amount;
 import main.Vitamin;
 
@@ -96,7 +95,7 @@ public class VitaminList {
 	 * @param servingSize Tamanho da porção que será usada como base
 	 * @return Lista de vitaminas com valores de quantidade proporcionais à porção
 	 */
-	public VitaminList proportional(double servingSize) {
+	public VitaminList proportionTo(double servingSize) {
 		VitaminList prop = new VitaminList(this.getVitaminList());
 		for(int i=0; i<this.vitaminList.size(); i++) {
 			prop.getVitaminList().get(i).setAmount(this.vitaminList.get(i).getAmount() / servingSize);

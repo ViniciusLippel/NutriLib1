@@ -221,7 +221,7 @@ public class NutriValue {
 		if(this.mineralList != null)
 			prop.setMineralList(this.mineralList.proportionTo(this.servingSize));
 		if(this.vitaminList != null)
-			prop.setVitaminList(this.vitaminList.proportional(this.servingSize));
+			prop.setVitaminList(this.vitaminList.proportionTo(this.servingSize));
 		return prop;
 	}
 	
